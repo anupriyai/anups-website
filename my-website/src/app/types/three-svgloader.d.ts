@@ -1,5 +1,5 @@
 declare module "three/examples/jsm/loaders/SVGLoader.js" {
-  import { Loader } from "three";
+  import { Loader, Shape } from "three";
 
   export interface SVGPathDataPoint { x: number; y: number }
   export interface SVGPath {
@@ -17,7 +17,6 @@ declare module "three/examples/jsm/loaders/SVGLoader.js" {
       onError?: (event: unknown) => void
     ): void;
 
-    // Optional parse method (some versions expose it)
-    static createShapes(path: any): any[];
+    static createShapes(path: SVGPath): Shape[];
   }
 }

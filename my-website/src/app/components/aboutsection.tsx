@@ -102,11 +102,11 @@ export default function AboutSection() {
           <div className="lg:col-span-8">
             <div className="mb-8 max-w-2xl">
               <p className="font-mono text-3xl sm:text-2xl leading-snug">
-                <span className="font-extrabold">I'M DRIVEN BY BUILDING, LEARNING, AND INNOVATING.</span>
+                <span className="font-extrabold">I&apos;M DRIVEN BY BUILDING, LEARNING, AND INNOVATING.</span>
               </p>
               <p className="font-mono mt-3 text-2xl sm:text-2xl text-neutral-200/90 max-w-2xl">
-                I'm passionate about <b>software engineering</b>, <b>AI/ML</b>, and <b>full-stack
-                development</b>. I'm looking for <b>SWE / AI engineering roles</b> where I can design,
+                I&apos;m passionate about <b>software engineering</b>, <b>AI/ML</b>, and <b>full-stack
+                development</b>. I&apos;m looking for <b>SWE / AI engineering roles</b> where I can design,
                 build, and scale impactful products.
               </p>
             </div>

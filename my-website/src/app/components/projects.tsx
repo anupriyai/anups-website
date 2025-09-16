@@ -60,12 +60,15 @@ function ProjectCard({ p }: { p: Project }) {
     }
   };
 
-  const handleLeave: React.MouseEventHandler<HTMLDivElement> = () => {
-    innerRef.current && (innerRef.current.style.transform = `rotateX(0) rotateY(0) translateZ(0)`);
-    shineRef.current &&
-      (shineRef.current.style.background =
-        `radial-gradient(400px circle at 50% 50%, rgba(255,255,255,0.10), transparent 55%)`);
-  };
+const handleLeave: React.MouseEventHandler<HTMLDivElement> = () => {
+  if (innerRef.current) {
+    innerRef.current.style.transform = `rotateX(0) rotateY(0) translateZ(0)`;
+  }
+  if (shineRef.current) {
+    shineRef.current.style.background =
+      `radial-gradient(400px circle at 50% 50%, rgba(255,255,255,0.10), transparent 55%)`;
+  }
+};
 
   return (
     <div className="group relative will-change-transform" style={{ perspective: "1200px" }} onMouseMove={handleMove} onMouseLeave={handleLeave}>
