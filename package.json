@@ -10,6 +10,6 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "deploy": "gh-pages -d build -b gh-pages"
+    "deploy": "gh-pages -d out -b gh-pages"
   }
 }
