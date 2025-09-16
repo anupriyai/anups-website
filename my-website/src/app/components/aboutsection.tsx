@@ -76,8 +76,8 @@ function SkillCard({ title, items }: { title: string; items: string[] }) {
       transition={{ duration: 0.35 }}
       className="rounded-2xl bg-[#2a2354]/70 ring-1 ring-white/10 p-5 sm:p-6 shadow-[inset_0_1px_0_rgba(255,255,255,0.06)] backdrop-blur"
     >
-      <h4 className="font-mondwest text-sm tracking-wider text-indigo-200 mb-2">{title}</h4>
-      <ul className="text-sm leading-relaxed text-neutral-200/90">
+      <h4 className="font-mondwest text-xl tracking-wider text-indigo-200 mb-2">{title}</h4>
+      <ul className="text-lg leading-relaxed text-neutral-200/90">
         {items.map((it) => (
           <li key={it} className="font-mono list-disc list-inside marker:text-indigo-300/80">
             {it}
@@ -91,7 +91,7 @@ function SkillCard({ title, items }: { title: string; items: string[] }) {
 export default function AboutSection() {
   return (
     <section id="about" className="relative isolate text-white">
-      <div className="mx-auto max-w-7xl px-6 py-16 sm:py-20 lg:py-28">
+      <div className="mx-auto max-w-screen-2xl px-6 py-16 sm:py-20 lg:py-28">
         <AccentRule className="mb-2" />
         <div className="mb-8 flex items-baseline gap-4">
           <span className="font-mondwest text-4xl sm:text-5xl text-indigo-300/90">01</span>
@@ -101,10 +101,10 @@ export default function AboutSection() {
         <div className="grid grid-cols-1 gap-10 lg:grid-cols-12 lg:gap-12">
           <div className="lg:col-span-8">
             <div className="mb-8 max-w-2xl">
-              <p className="font-mono text-lg sm:text-xl leading-snug">
+              <p className="font-mono text-3xl sm:text-2xl leading-snug">
                 <span className="font-extrabold">I'M DRIVEN BY BUILDING, LEARNING, AND INNOVATING.</span>
               </p>
-              <p className="font-mono mt-3 text-base sm:text-lg text-neutral-200/90 max-w-2xl">
+              <p className="font-mono mt-3 text-2xl sm:text-2xl text-neutral-200/90 max-w-2xl">
                 I'm passionate about <b>software engineering</b>, <b>AI/ML</b>, and <b>full-stack
                 development</b>. I'm looking for <b>SWE / AI engineering roles</b> where I can design,
                 build, and scale impactful products.

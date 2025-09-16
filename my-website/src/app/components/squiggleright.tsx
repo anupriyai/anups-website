@@ -45,13 +45,12 @@ export default function SquiggleRight({
       }}
       aria-hidden
     >
-      {/* Right-anchored box for the squiggles */}
       <div
         style={{
           position: "absolute",
           right: "-6vw",
           bottom: "-8vh",
-          width: "56vw",     // tune these three to position/scale
+          width: "100vw",
           height: "110vh",
           background: "transparent",
         }}

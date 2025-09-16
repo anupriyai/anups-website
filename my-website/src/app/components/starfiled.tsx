@@ -18,6 +18,7 @@ export default function Starfield() {
 
   const options = useMemo<ISourceOptions>(
     () => ({
+      background: { color: { value: "#000000" } },
       particles: {
         number: { value: 150 },
         shape: { type: "star" },
