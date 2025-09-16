@@ -4,6 +4,8 @@ import Typewriter from "./components/typewrite";
 import AboutSection from "./components/aboutsection";
 import ProjectsSection from "./components/projects";
 import ExperiencesTimeline, {ExperienceItem} from "./components/experiencetimeline";
+import HoverMegaMenu from "./components/hovermenu";
+import Section from "./components/section";
 
 const items: ExperienceItem[] = [
   {
@@ -40,11 +42,12 @@ const items: ExperienceItem[] = [
 export default function Home() {
   return (
     <>
+    <HoverMegaMenu />
       <div className="fixed inset-0 z-0">
         <Starfield />
       </div>
 
-      <section
+      <Section
         id="hero"
         className="relative min-h-[100svh] flex items-center overflow-hidden"
       >
@@ -88,14 +91,19 @@ export default function Home() {
             <Typewriter
               className="font-handjet"
               words={[
-                "making things…",
-                "building AI tools…",
-                "designing React/Next.js frontends…",
-                "turning data into stories…",
-                "experimenting with LLMs…",
-                "mapping the world…",
-                "leading student projects…",
-                "cooking fried rice…",
+                "making things...",
+                "building AI tools...",
+                "designing frontend interfaces...",
+                "turning data into stories...",
+                "experimenting with LLMs...",
+                "traveling the world...",
+                "leading student projects...",
+                "cooking different cuisines...",
+                "food and eating in general...",
+                "watching tv shows...",
+                "learning new things...",
+                "making beds...",
+                "organizing things (from time to time)...",
               ]}
               typingSpeed={45}
               deletingSpeed={28}
@@ -103,21 +111,21 @@ export default function Home() {
             />
           </p>
         </div>
-      </section>
+      </Section>
 
-      <section id="about" className="relative z-20 pt-[18vh]">
+      <Section id="about">
         <AboutSection />
-      </section>
+      </Section>
 
-      <section id="experience" className="relative z-20 pt-24 pb-16">
+      <Section id="experience">
         <div className="mx-auto max-w-screen-2xl px-6">
           <ExperiencesTimeline items={items} />
         </div>
-      </section>
+      </Section>
 
-      <section id="projects" className="relative z-20 pt-[18vh]">
+      <Section id="projects">
         <ProjectsSection />
-      </section>
+      </Section>
     </>
   );
 }
